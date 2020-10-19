@@ -1,0 +1,144 @@
+.menu {
+  position: absolute;
+  transform: translateX(-700px);
+  transition: transform 0.3s ease-in;
+  z-index: 1;
+
+  box-sizing: border-box;
+  background-color: white;
+  width: 320px;
+  min-width: 320px;
+  height: 100vh;
+  padding: 24px 16px;
+
+  &--active {
+    position: fixed;
+    box-shadow: -2px 0px 4px rgba(69, 79, 125, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+    transform: translateX(0);
+    z-index: 1000;
+    height: 100vh;
+    overflow: visible;
+  }
+
+  @media (min-width: $screen-xl) {
+    position: relative;
+    transform: translateX(0);
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 80px;
+
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+  &__search {
+    margin-right: 5px;
+    margin-left: auto;
+    justify-content: flex-end;
+    display: flex;
+    flex-basis: 160px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    position: relative;
+    list-style-type: none;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    padding: 18px 0;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    &:hover {
+      color: #7e7e82;
+      transition-duration: 200ms;
+    }
+    &:hover::before {
+      transition-duration: 200ms;
+      content: "";
+      width: 4px;
+      height: 32px;
+      background-color: $cyan;
+      border-radius: 0 15px 15px 0;
+      position: absolute;
+      left: -16px;
+      top: 12px;
+    }
+  }
+
+  &__link--active::before {
+    content: "";
+    width: 4px;
+    height: 32px;
+    background-color: $cyan;
+    border-radius: 0 15px 15px 0;
+    position: absolute;
+    left: -16px;
+    top: 8px;
+  }
+
+  & .feedback {
+    width: 152px;
+    list-style-type: none;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__item:first-child {
+      margin-left: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-top: 240px;
+    }
+  }
+
+  &__contacts {
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+  }
+  &__mail-to {
+    display: block;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $custom-black;
+    text-decoration: none;
+    padding-bottom: 10px;
+  }
+  &__call-to {
+    display: block;
+    font-family: TT Lakes;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: $custom-black;
+    text-decoration: none;
+  }
+  & a:hover {
+    color: $gray;
+  }
+}

@@ -1,0 +1,109 @@
+.header-menu {
+  padding: 24px 16px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    transform: translateY(-320px);
+  }
+  .circle-btn {
+    margin: 0 8px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &__left-part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: $screen-md) {
+      justify-content: space-between;
+      flex-basis: 175px;
+      position: relative;
+      &::before {
+        content: "";
+        width: 2px;
+        height: 32px;
+        background-color: $middle-gray;
+        position: absolute;
+        left: 62px;
+        top: 12px;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      transform: translateY(-320px);
+    }
+  }
+
+  &__feedback {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      padding-right: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      transform: translateY(-600px);
+    }
+  }
+
+  &__support {
+    padding: inherit;
+    display: flex;
+    justify-content: flex-end;
+    &::before {
+      content: "";
+      width: 2px;
+      height: 32px;
+      background-color: $middle-gray;
+      transform: translate(-6px, 4px);
+    }
+
+    @media (min-width: $screen-lg) {
+      position: absolute;
+      transform: translate(830px, 340px);
+      right: -230px;
+      width: 260px;
+      justify-content: space-between;
+      &::before {
+        display: none;
+      }
+
+      .circle-btn:first-child::before {
+        content: "Оставить заявку";
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        wrap: nowrap;
+        position: absolute;
+        transform: translateX(-180px);
+      }
+      .circle-btn:last-child::before {
+        content: "Статус ремонта";
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        wrap: nowrap;
+        position: absolute;
+        transform: translateX(-180px);
+      }
+    }
+  }
+}

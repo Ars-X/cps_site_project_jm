@@ -1,0 +1,73 @@
+.circle-btn {
+  background-color: transparent;
+  display: block;
+  border: none;
+  outline: none;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.5rem $gray);
+    transition-duration: 0.3s;
+  }
+}
+
+.circle-btn--go {
+  background-image: url("../img/icons/arrow_round_go.svg");
+}
+
+.btn-read-more {
+  padding-left: 24px;
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $custom-black;
+  border: 2px solid transparent;
+  background-color: $light-gray;
+  outline: none;
+  position: relative;
+  border-radius: 10%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 10px;
+    background-color: $light-gray;
+    background-image: url("../img/icons/arrow_double.svg");
+    position: absolute;
+    left: 5px;
+    top: 7px;
+  }
+  &:hover {
+    transition-duration: 300ms;
+    border: 2px solid $cyan;
+    border-radius: 6px;
+    background-color: white;
+  }
+  &--active::before {
+    background-image: url("../img/icons/arrow_double.svg");
+    transform: rotate(180deg);
+  }
+}
+
+.action-button {
+  border: none;
+  outline: none;
+  margin-right: 20px;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    transition-duration: 100ms;
+    filter: drop-shadow(0 0 0.75rem $gray);
+  }
+}

@@ -1,0 +1,67 @@
+.section {
+  background-color: $light-gray;
+
+  &__container {
+    height: auto;
+  }
+
+  &__header {
+    background: $gradient;
+    padding: 16px;
+  }
+
+  &__title {
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $gray;
+    font-weight: 200;
+  }
+
+  &__footer {
+    padding: 36px;
+  }
+
+  &__proposal {
+    width: 420px;
+    margin-top: 0;
+    padding: 0;
+
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $custom-black;
+  }
+
+  &__link {
+    padding: 10px 0;
+    padding-right: 25px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $custom-black;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid transparent;
+    &::after {
+      content: "";
+      width: 8px;
+      height: 12px;
+      background-image: url("../img/icons/arrow_single.svg");
+      position: absolute;
+      left: 290px;
+      top: 16px;
+    }
+    &:hover {
+      color: $magenta;
+    }
+    &:active {
+      background-color: $gray;
+    }
+  }
+}

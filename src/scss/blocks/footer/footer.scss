@@ -1,0 +1,57 @@
+.footer {
+  background-color: $light-gray;
+
+  &__list {
+    margin: 0;
+    padding: 57px 10px 10px 10px;
+    list-style-type: none;
+    text-align: center;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 16px;
+    color: $gray;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__list-item {
+    padding: 8px 0;
+
+    & p {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    @media (min-width: $screen-md) {
+      &:first-child {
+        text-align: start;
+        flex: 0 0 33%;
+      }
+      &:nth-child(2) {
+        text-align: center;
+        flex: 0 0 33%;
+      }
+      &:last-child {
+        text-align: end;
+        flex: 0 0 33%;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 5px;
+    color: $gray;
+    border: none;
+    &:hover {
+      color: $magenta;
+      text-decoration: underline;
+    }
+    &:active {
+      background-color: $gray;
+    }
+  }
+}

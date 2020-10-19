@@ -1,0 +1,67 @@
+.article {
+  background-color: $light-gray;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__text {
+    padding: 16px;
+
+    @media (min-width: $screen-md) {
+      width: calc(100% - 350px);
+    }
+  }
+
+  &__list {
+    height: 90px;
+    overflow: hidden;
+    transition: height 200ms ease-in;
+
+    @media (min-width: $screen-md) {
+      height: 150px;
+    }
+
+    &--expanded {
+      height: auto;
+    }
+  }
+
+  &__paragraph {
+    margin: 0;
+    padding: 12px 0;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $custom-black;
+  }
+
+  .btn-read-more {
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__image {
+    @media (min-width: $screen-md) {
+      padding-top: 24px;
+      padding-right: 12px;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $screen-md) {
+      width: 360px;
+    }
+
+    @media (min-width: $screen-lg) {
+      min-width: 532px;
+    }
+  }
+}

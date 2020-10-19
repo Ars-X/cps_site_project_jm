@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 60px 16px 24px 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: auto;
+  z-index: -1;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 0;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 24px 0;
+    &::before {
+      left: -16px;
+    }
+  }
+
+  & .action-button {
+    align-self: flex-end;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid $middle-gray;
+    border-radius: 8px;
+
+    &:focus {
+      border-color: $middle-gray;
+    }
+
+    &--message {
+      resize: none;
+      min-height: 118px;
+    }
+  }
+}

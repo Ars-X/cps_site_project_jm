@@ -1,0 +1,62 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "./variables/variables.scss";
+@import "./blocks/buttons/buttons.scss";
+@import "./blocks/header-menu/header-menu.scss";
+@import "./blocks/content/content.scss";
+@import "./blocks/article/article.scss";
+@import "./blocks/section/section.scss";
+@import "./blocks/brands/brands.scss";
+@import "./blocks/equipment/equipment.scss";
+@import "./blocks/prices/prices.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/menu/menu.scss";
+@import "./blocks/lang-list/lang-list.scss";
+@import "./blocks/modal/modal.scss";
+@import "./blocks/container/container.scss";
+@import "./blocks/title/title.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/feedback/feedback.scss";
+@import "./blocks/support/support.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/swiper/swiper.scss";
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "TT Lakes", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("../fonts/TTLakes-Bold.woff2") format("woff2"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("../fonts/TTLakes-Medium.woff2") format("woff2"),
+    url("../fonts/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("../fonts/TTLakes-Regular.woff2") format("woff2"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype");
+}
