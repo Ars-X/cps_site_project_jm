@@ -19,4 +19,4 @@
 - Webpack
 - github и github pages
 
-##### Ссылка на страничку на [github pages](https://)
+##### Ссылка на страничку на [github pages](https://ars-x.github.io/cps_site_project_jm/)
