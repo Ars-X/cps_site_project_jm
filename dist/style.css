@@ -1093,7 +1093,7 @@ button.swiper-pagination-bullet {
     transition: height 200ms ease-in; }
     @media (min-width: 768px) {
       .article__list {
-        height: 150px; } }
+        height: 140px; } }
     .article__list--expanded {
       height: auto; }
   .article__paragraph {
