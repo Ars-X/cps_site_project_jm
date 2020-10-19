@@ -19,4 +19,4 @@
 - Webpack
 - github и github pages
 
-##### Ссылка на [github pages](https://)
+##### Ссылка на страничку на [github pages](https://)
