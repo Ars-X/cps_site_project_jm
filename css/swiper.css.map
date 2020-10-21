@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,MAAM,EAAE,SAAS,EAAE,KAAK;EAD1B,AAAA,kBAAkB,CAAC;IAEf,OAAO,EAAE,IAAI;GAEhB;;;AAED,AAAA,gCAAgC,CAAC;EAC/B,gBAAgB,EAAE,IAAI;CACvB",
+    "sources": [
+        "../src/scss/blocks/swiper/swiper.scss"
+    ],
+    "names": [],
+    "file": "swiper.css"
+}
